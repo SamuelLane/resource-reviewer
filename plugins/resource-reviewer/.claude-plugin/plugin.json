@@ -1,0 +1,8 @@
+{
+  "name": "resource-reviewer",
+  "version": "0.1.0",
+  "description": "Evaluate Claude Code resources shared by creators — and decide whether they fit your setup before installing.",
+  "author": {
+    "name": "Sam Lane"
+  }
+}
