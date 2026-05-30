@@ -99,7 +99,7 @@ User pastes a URL:
 
 Classifying… GitHub repo
 Fetching README, SKILL.md, structure…
-Scanning your setup: kinlet (SwiftUI + Supabase)
+Scanning your setup: acme-ios (SwiftUI + Supabase)
 Cross-referencing…
 
 ────────────────────────────────────────────────
@@ -110,7 +110,7 @@ A "backend API architect" skill that generates Express/Fastify
 endpoints from feature descriptions. Heavy Node.js focus.
 
 Fit with your setup
-Kinlet is SwiftUI + Supabase. You don't run Node backends; your
+Acme-ios is SwiftUI + Supabase. You don't run Node backends; your
 backend logic lives in Supabase Edge Functions and Postgres RPCs.
 No overlap with your installed skills.
 
@@ -281,12 +281,12 @@ Actively re-run the fit analysis on every deferred review against the user's cur
 ```
 > /review-history --recheck
 
-Scanning current stack: axis-tek (Next.js + Supabase + multi-user)
+Scanning current stack: acme-web (Next.js + Supabase + multi-user)
 Rechecking 2 deferred reviews…
 
 ⟳ ai-pm-workflow-article — now relevant
    Trigger matched: "managing a multi-person team"
-   You're now collaborating with Kyle and Andy on Axis Tek.
+   You're now collaborating with two teammates on Acme Web.
    Want to review and apply? [y/N]
 
 prompt-engineering-mega — still deferred
@@ -312,12 +312,12 @@ verdict_reason: "Wrong stack for current project but could matter later"
 applied: false
 apply_scope: null
 stack_snapshot:
-  project_name: kinlet
-  project_path: /Users/sam/code/kinlet
+  project_name: acme-ios
+  project_path: /Users/you/code/acme-ios
   primary_tech: [swiftui, supabase]
   installed_skills: [frontend-design, supabase-schema, swiftui-patterns]
   installed_mcp_servers: [supabase, posthog, notion]
-  claude_md_summary: "iOS app for family activity discovery, SwiftUI + Supabase + Perplexity"
+  claude_md_summary: "consumer iOS app, SwiftUI + Supabase + a search API"
 revisit_triggers:
   - "if you add a Node/Express backend to any project"
   - "if you start building a web frontend that needs its own API layer"
