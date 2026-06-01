@@ -4,12 +4,13 @@
     "name": "Sam Lane",
     "url": "https://github.com/samuellane"
   },
+  "description": "Home of the resource-reviewer plugin — evaluate Claude Code resources shared by creators against your actual setup, then install, synthesize, or scaffold the right thing.",
   "plugins": [
     {
       "name": "resource-reviewer",
       "source": "./plugins/resource-reviewer",
       "description": "Evaluate Claude Code resources (skills, agents, commands, MCP servers, prompts, articles) against your actual setup before installing.",
-      "version": "0.1.0"
+      "version": "0.3.0"
     }
   ]
 }
