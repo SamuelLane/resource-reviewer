@@ -1,8 +1,11 @@
 # resource-reviewer
 
-A Claude Code plugin marketplace hosting the **resource-reviewer** plugin: a setup-aware evaluator for resources (skills, agents, commands, MCP servers, prompts, articles) shared by creators.
+You paste a URL. It reads what's there, looks at your actual setup, and tells you
+honestly whether it's worth installing. If it is, it installs it.
 
-You paste a URL. It reads what's there, looks at your actual setup, and tells you honestly whether it's worth installing. If yes, it installs it.
+A Claude Code plugin for evaluating shared resources — skills, agents, commands,
+MCP servers, prompts, and articles — against the setup you actually have, instead
+of the one the author assumed.
 
 ## Install
 
@@ -11,11 +14,13 @@ You paste a URL. It reads what's there, looks at your actual setup, and tells yo
 /plugin install resource-reviewer
 ```
 
-Three new slash commands become available:
+Three slash commands become available:
 
 - `/review-resource <url>` — review a resource
-- `/apply-resource <slug>` — install one you previously reviewed; for workflow articles it synthesizes a skill or command, and for build blueprints it scaffolds a ready-to-build project folder
-- `/review-history [--deferred|--recheck]` — browse / recheck past reviews
+- `/apply-resource <slug>` — install one you reviewed earlier. For workflow
+  articles it synthesizes a skill or command; for build blueprints it scaffolds a
+  ready-to-build project folder.
+- `/review-history [--deferred|--recheck]` — browse or recheck past reviews
 
 ## Layout
 
@@ -26,4 +31,13 @@ Three new slash commands become available:
 
 ## Status
 
-v0.3.0 — core plugin + a **router** that decides what a link should become: install as-is, synthesize a skill/command from a reusable workflow, or scaffold a **project seed** (a new folder with `CLAUDE.md` + a build brief) from a build blueprint. Every path validates and shows-before-write; the plugin never auto-builds an app — it sets up the project and hands off. Remaining for v1: live testing on real articles/blueprints, slash-command polish, and publishing to GitHub. See [`docs/SPEC.md`](docs/SPEC.md) §§ Synthesis flow, Project-seed flow.
+**v0.3.0.** The core plugin ships with a router that decides what a link should
+become: install as-is, synthesize a skill or command from a reusable workflow, or
+scaffold a project seed — a new folder with `CLAUDE.md` and a build brief — from a
+build blueprint.
+
+Every path validates and shows before it writes. The plugin never auto-builds an
+app; it sets up the project and hands off.
+
+Ahead of v1: live testing against real articles and blueprints, and slash-command
+polish.
